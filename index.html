@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <iframe data-aa='2394289' src='//ad.a-ads.com/2394289?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+#calculator {
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    margin: 5px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+#ad-banner {
+    margin-top: 20px;
+    height: 100px;
+    background-color: #e1e1e1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+  </style>
+
+    <header>
+        <h1>Free Online Calculator</h1>
+        <p>Simple, fast, and accurate!</p>
+    </header>
+
+    <main>
+        <section id="calculator">
+            <input id="display" type="text" disabled>
+            <div id="buttons">
+                <button onclick="appendNumber('7')">7</button>
+                <button onclick="appendNumber('8')">8</button>
+                <button onclick="appendNumber('9')">9</button>
+                <button onclick="appendNumber('+')">+</button>
+                <button onclick="appendNumber('4')">4</button>
+                <button onclick="appendNumber('5')">5</button>
+                <button onclick="appendNumber('6')">6</button>
+                <button onclick="appendNumber('-')">-</button>
+                <button onclick="appendNumber('1')">1</button>
+                <button onclick="appendNumber('2')">2</button>
+                <button onclick="appendNumber('3')">3</button>
+                <button onclick="appendNumber('*')">*</button>
+                <button onclick="appendNumber('0')">0</button>
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="calculateResult()">=</button>
+                <button onclick="appendNumber('/')">/</button>
+            </div>
+        </section>
+
+        <section id="ads">
+            <div class="ad-banner">
+                <!-- Integrate an ad network script here -->
+                <script async src="https://example-ad-network.com/ad.js"></script>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us | Privacy Policy</p>
+    </footer>
+
+    <script >let display = document.getElementById('display');
+
+function appendNumber(number) {
+    display.value += number;
+}
+
+function clearDisplay() {
+    display.value = '';
+}
+
+function calculateResult() {
+    try {
+        display.value = eval(display.value);
+    } catch (e) {
+        display.value = 'Error';
+    }
+}
+</script>
+</body>
+</html>
